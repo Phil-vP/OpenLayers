@@ -1,0 +1,23 @@
+.testDiv {
+    border: 3px solid green;
+    padding: 5%;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.openLayersArea {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    border: 3px solid green;
+    padding: 2% 2% 2% 2%;
+}
+
+#map {
+    width: 100%;
+    height: 50%;
+}
+
+/*# sourceMappingURL=/styleMain.100c36bf.css.map */
