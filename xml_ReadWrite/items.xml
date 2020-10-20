@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<Tracks>
+	<flyingObject>
+		<gmlPoint>
+			<gmlPos srsDimension="2">asdfghj</gmlPos>
+		</gmlPoint>
+		<gmlLineString>
+			<gmlPosList/>
+		</gmlLineString>
+	</flyingObject>
+</Tracks>
