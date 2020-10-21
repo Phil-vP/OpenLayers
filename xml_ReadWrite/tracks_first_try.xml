@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<Tracks xmlns:gml="http://www.opengis.net/gml">
+	<flyingObject id="1" track_classification="friendly" track_identification="plane">
+		<gml:Point>
+			<gml:Pos>41 36</gml:Pos>
+		</gml:Point>
+		<gml:LineString>
+			<gml:PosList>40 35, 41 36</gml:PosList>
+		</gml:LineString>
+	</flyingObject>
+	<flyingObject id="2" track_classification="unknown" track_identification="unknown"/>
+	<flyingObject id="3" track_classification="unknown" track_identification="unknown">
+		<gml:Point>
+			<gml:Pos>22 -37</gml:Pos>
+		</gml:Point>
+		<gml:LineString>
+			<gml:PosList>20 -35, 22 -37</gml:PosList>
+		</gml:LineString>
+	</flyingObject>
+	<flyingObject id="4" track_classification="unknown" track_identification="unknown"/>
+	<flyingObject id="5" track_classification="unknown" track_identification="unknown"/>
+</Tracks>

@@ -1,11 +1,13 @@
 <?xml version="1.0" ?>
-<Tracks>
+<Tracks xmlns:gml="http://www.opengis.net/gml">
 	<flyingObject>
-		<gmlPoint>
-			<gmlPos srsDimension="2">asdfghj</gmlPos>
-		</gmlPoint>
-		<gmlLineString>
-			<gmlPosList/>
-		</gmlLineString>
+		<gml:Point/>
+		<gml:LineString/>
+		<gml:Point>
+			<gml:Pos srsDimension="2">asdf</gml:Pos>
+		</gml:Point>
+		<gml:LineString>
+			<gml:PosList/>
+		</gml:LineString>
 	</flyingObject>
 </Tracks>
