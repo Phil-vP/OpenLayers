@@ -1,0 +1,1 @@
+<Tracks xmlns:gml="http://www.opengis.net/gml"><flyingObject id="1" track_classification="unknown" track_identification="unknown"><gml:Point><gml:Pos>13.28 49.63999999999999</gml:Pos></gml:Point><gml:LineString><gml:PosList>11.58 48.14, 12.08 48.44, 12.28 48.74, 12.58 48.94, 13.08 49.24, 13.28 49.64</gml:PosList></gml:LineString></flyingObject></Tracks>

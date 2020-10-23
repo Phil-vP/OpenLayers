@@ -7,6 +7,7 @@ Created on Tue Oct 20 12:09:34 2020
 
 import xml.etree.ElementTree as ET
 import xml.dom.minidom as MD
+import random
 
 
 tree_root = {}
@@ -136,16 +137,41 @@ def write_file(filename):
     mydata = ET.tostring(tree_root).decode()
 
     dom = MD.parseString(mydata)
-    # dom = expatbuilder.parseString(mydata, False)
-    mydata_pretty = dom.toprettyxml()
-    print(mydata_pretty)
+    
+    # mydata_pretty = dom.toprettyxml()
+    # print(mydata_pretty)
     with open(filename, "w+") as myfile:
-        myfile.write(mydata_pretty)
+        # myfile.write(mydata_pretty)
+        myfile.write(mydata)
 
+
+def testRun():
+    add_new_track(1, "unknown", "unknown")
+    lon_c = 11.58
+    lat_c = 48.14
+    update_position(1, lon_c, lat_c)
+    for i in range(5):
+        lon_c += round(random.randint(1, 5)/10, 2)
+        lat_c += round(random.randint(1, 5)/10, 2)
+        update_position(1, lon_c, lat_c)
+    
+    write_file("track_test.gml")
+
+
+def prettyPrintFile(filename):
+    tree = ET.parse(filename)
+    root = tree.getroot()
+    
+    mydata = ET.tostring(root).decode()
+    
+    dom = MD.parseString(mydata)
+    
+    print(dom.toprettyxml())
 
 if __name__ == "__main__":
     print("XML Writer")
     create_root()
-    addTracks(5)
+    # prettyPrintFile("mypolygon_px6.gml")
+    testRun()
     prettyPrint()
     print("Done")

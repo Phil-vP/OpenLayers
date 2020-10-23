@@ -1,0 +1,35 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    10,
+                    15
+                ],
+                "type": "Point"
+            },
+            "id": "1",
+            "properties": {
+                "classification": "friendly",
+                "identification": "AWACS"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8,
+                    7
+                ],
+                "type": "Point"
+            },
+            "id": "2",
+            "properties": {
+                "classification": "unknown",
+                "identification": "unknown"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}
