@@ -3,10 +3,51 @@
         {
             "geometry": {
                 "coordinates": [
-                    10,
-                    15
+                    11.44,
+                    48.81
                 ],
                 "type": "Point"
+            },
+            "id": "1",
+            "properties": {
+                "classification": "friendly",
+                "identification": "AWACS",
+                "sidc": "SFGPUCFTR------"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    11.48,
+                    48.82
+                ],
+                "type": "Point"
+            },
+            "id": "2",
+            "properties": {
+                "classification": "unknown",
+                "identification": "unknown"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        11.49,
+                        48.77
+                    ],
+                    [
+                        11.47,
+                        48.8
+                    ],
+                    [
+                        11.44,
+                        48.81
+                    ]
+                ],
+                "type": "LineString"
             },
             "id": "1",
             "properties": {
@@ -18,10 +59,16 @@
         {
             "geometry": {
                 "coordinates": [
-                    8,
-                    7
+                    [
+                        11.5,
+                        48.81
+                    ],
+                    [
+                        11.48,
+                        48.82
+                    ]
                 ],
-                "type": "Point"
+                "type": "LineString"
             },
             "id": "2",
             "properties": {
