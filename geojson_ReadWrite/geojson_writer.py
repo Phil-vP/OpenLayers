@@ -128,7 +128,7 @@ def read_file(filename):
 
 
 def write_file(filename):
-    # create a new XML file with the results
+    # create a new JSON file with the results
     print("\n    Writing File... \n")
     
 	feature_list = []
