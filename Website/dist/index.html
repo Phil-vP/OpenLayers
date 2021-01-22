@@ -7,18 +7,34 @@
     <div class="allElements">
       <div class="centerText testDiv">Hallo, ich bin Marcel Davis</div>
 
-      <div class="openLayersArea">
-        <div id="map" class="map"></div>
-        <button id="zoom-out">Zoom out</button>
-        <button id="zoom-in">Zoom in</button>
-        <button id="center-map">Center Map</button>
-        <button id="print-center">Print Center</button>
-        <button id="center_munich">Center Munich</button>
-        <button id="display_tracks">Display Tracks</button>
-        <br>
+      
+      <div id="controlPanel">
+        <div id="mapControl">
+          Controls:<br>
+          <button class="button" id="zoom-out">Zoom out</button><br>
+          <button class="button" id="zoom-in">Zoom in</button><br>
+          <button class="button" id="center-map">Center Map</button><br>
+          <button class="button" id="print-center">Print Center</button><br>
+          <button class="button" id="center_munich">Center Munich</button><br>
+          <button class="button" id="display_tracks">Display Tracks</button><br>
+        </div>
 
-        <p id="text_below_map"></p>
+        <div id="trackControlPanel">
+          <label for="object_placement">Objekt platzieren:</label>
+          <br>
+          <select name="object_placement" id="object_placement" size="5">
+            <option value="none">None</option>
+            <option value="radar">Radar</option>
+            <option value="toc">TOC</option>
+            <option value="launcher">Launcher</option>
+            <option value="laser">Laser</option>
+          </select>
+        </div>
+      </div>
 
+      <div id="openLayersArea">
+        <div id="map" class="ol-map"></div>
+        <div id="text_below_map"></div>
         <script src="/main.1e43358e.js"></script>
       </div>
     </div>
