@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ol": "^6.4.3"
+    "milsymbol": "^2.0.0",
+    "ol": "^6.5.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"

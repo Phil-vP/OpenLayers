@@ -8,7 +8,8 @@
 }
 
 #openLayersArea {
-    width: 80%;
+    width: 75%;
+    height: 75%;
     margin: auto;
     margin-top: 5px;
     border: 3px solid green;
@@ -16,13 +17,21 @@
     float: left;
 }
 
+#text_below_map_div {
+    padding: 2%;
+}
+
 #controlPanel {
-    width: 8%;
+    width: 16%;
     margin: auto;
     margin-top: 5px;
     border: 3px solid green;
     padding: 1% 1% 1% 1%;
     float: left;
+}
+
+td {
+    border: 1px solid black;
 }
 
 

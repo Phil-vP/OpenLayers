@@ -5,7 +5,7 @@
   <script src="/styleMain.100c36bf.js"></script><link rel="stylesheet" href="/main.1e43358e.css"></head>
   <body>
     <div class="allElements">
-      <div class="centerText testDiv">Hallo, ich bin Marcel Davis</div>
+      <div hidden="True" class="centerText testDiv">Hallo, ich bin Marcel Davis</div>
 
       
       <div id="controlPanel">
@@ -17,26 +17,39 @@
           <button class="button" id="print-center">Print Center</button><br>
           <button class="button" id="center_munich">Center Munich</button><br>
           <button class="button" id="display_tracks">Display Tracks</button><br>
+          <button class="button" id="show_features">Show Features</button><br>
+          <button class="button" id="parse_geojson">Parse GeoJSON</button><br>
         </div>
 
         <div id="trackControlPanel">
           <label for="object_placement">Objekt platzieren:</label>
           <br>
-          <select name="object_placement" id="object_placement" size="5">
-            <option value="none">None</option>
+          <select name="object_placement" id="object_placement" size="6">
+            <option value="none" selected="selected">None</option>
+            <option value="move">Move Object</option>
+            <option value="delete">Delete Object</option>
+            <option value="details">Details</option>
             <option value="radar">Radar</option>
             <option value="toc">TOC</option>
             <option value="launcher">Launcher</option>
             <option value="laser">Laser</option>
           </select>
         </div>
+        <br>
+        <div id="detailPanel">
+        </div>
+
       </div>
 
       <div id="openLayersArea">
         <div id="map" class="ol-map"></div>
-        <div id="text_below_map"></div>
+        <div id="text_below_map_div">
+          <p id="text_below_map"></p>
+          <pre id="json"></pre>
+        </div>
         <script src="/main.1e43358e.js"></script>
       </div>
     </div>
+    
   </body>
 </html>
