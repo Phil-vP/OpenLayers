@@ -12,7 +12,7 @@ import milsymbol from 'milsymbol';
 
 import { fromLonLat, toLonLat } from 'ol/proj';
 
-const munich_LonLat = [11.581981, 48.135125];
+const munich_LonLat = [11.57549, 48.13743];
 const munich_mercator = fromLonLat(munich_LonLat);
 const ratio = window.devicePixelRatio || 1;
 
@@ -173,25 +173,25 @@ typeSelect.onchange = function () {
 
 addInteraction();
 
-document.getElementById('zoom-out').onclick = function () {
+document.getElementById('zoom_out').onclick = function () {
   var view = map.getView();
   var zoom = view.getZoom();
   view.setZoom(zoom - 1);
 };
 
-document.getElementById('zoom-in').onclick = function () {
+document.getElementById('zoom_in').onclick = function () {
   var view = map.getView();
   var zoom = view.getZoom();
   view.setZoom(zoom + 1);
 };
 
-document.getElementById('center-map').onclick = function () {
+document.getElementById('center_map').onclick = function () {
   var view = map.getView();
   var center_coo = [0,0];
   view.setCenter(center_coo);
 }
 
-document.getElementById('print-center').onclick = function () {
+document.getElementById('print_center').onclick = function () {
   var bottom_text = document.getElementById('text_below_map');
   var view = map.getView();
   var center_coo = view.getCenter();
@@ -220,7 +220,7 @@ document.getElementById('display_tracks').onclick = function () {
   var features = gs.readFeatures(testJSON);
 }
 
-document.getElementById('show_features').onclick = function () {
+document.getElementById('print_features').onclick = function () {
   text = "All Features:<br>";
   text += source.getFeatures() + "<br>";
   document.getElementById('text_below_map').innerHTML = text;
